@@ -5,6 +5,7 @@ public class Cours {
     int placesRestantes;
 
     public Cours(String titre, String formateur, int duree, int placesRestantes) {
+        // duree en Heures
         this.titre = titre;
         this.formateur = formateur;
         this.duree = duree;
@@ -43,4 +44,11 @@ public class Cours {
         this.placesRestantes = placesRestantes;
     }
 
+    public void montrerDetails() {
+        System.out.println(
+                "\nTitre: " + this.titre +
+                        "\nFormateur: " + this.formateur +
+                        "\nDuree du cours (Heures): " + this.duree +
+                        "\nPlaces restantes: " + this.placesRestantes);
+    }
 }
