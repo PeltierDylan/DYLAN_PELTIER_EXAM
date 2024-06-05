@@ -12,9 +12,9 @@ public class Etudiant extends Individu {
 
     public void montrerDetails() {
         System.out.println(
-                "\nNom: " + this.nom +
+                "\nEtudiant n° " + this.identifiant +
+                        "\nNom: " + this.nom +
                         "\nPrenom: " + this.prenom +
-                        "\nIdentifiant : " + this.identifiant +
                         "\nDate d'inscription: " + this.dateInscription +
                         "\nNiveau d'étude: " + this.niveauEtude);
     }
