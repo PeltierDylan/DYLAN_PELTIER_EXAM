@@ -1,4 +1,3 @@
-package base;
 
 public abstract class Individu {
     String nom;
