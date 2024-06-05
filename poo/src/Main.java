@@ -26,7 +26,7 @@ public class Main {
         for (int i = 0; i != coursList.size(); i++) {
             coursList.get(i).montrerDetails();
         }
-        individus.get(1).participer(coursList.get(0));
+        // individus.get(1).participer(coursList.get(0));
     }
 
 }
