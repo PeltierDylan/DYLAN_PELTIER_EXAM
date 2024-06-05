@@ -1,4 +1,4 @@
-public class Cours {
+public class Cours implements Participable {
     String titre;
     String formateur;
     int duree;// En heures
@@ -46,9 +46,19 @@ public class Cours {
 
     public void montrerDetails() {
         System.out.println(
-                "\nTitre: " + this.titre +
+                "\nCours de " + this.titre +
                         "\nFormateur: " + this.formateur +
                         "\nDuree du cours (Heures): " + this.duree +
                         "\nPlaces restantes: " + this.placesRestantes);
+    }
+
+    public Participable quitter() {
+        this.placesRestantes++;
+        return this;
+    }
+
+    public Participable participer() {
+        this.placesRestantes--;
+        return this;
     }
 }
